@@ -9,24 +9,28 @@
    
         .parent{
             border:5px solid pink;
-            height:500px;
-            width:800px;
+            height:600px;
+            width:600px;
             display:flex;
              flex-direction:row; 
-            /* flex-wrap:wrap-reverse ; */
+            flex-wrap:wrap ;
             /* flex-flow: row wrap; */
-           /* justify-content: center; */
+           justify-content: center;
            /* justify-content: flex-start; */
            /* justify-content: flex-end; */
            /* justify-content: space-between; */
            /* justify-content: space-evenly; */
-           justify-content: space-around;
+           /* justify-content: space-around; */
+           /* align-content:center */
+           /* align-content: space-around */
+           /* align-items: stretch */
+           align-items:stretch
 
 
         }
         .child{
-            width:200px;
-            height:200px;
+            width:100px;
+            /* height:100px; */
 
         }
         #box1{
@@ -43,12 +47,15 @@
 
 <body>
     <div class="parent">
-        <div id=box1 class="child"></div>
-        <div id="box2"  class="child"></div>
-        <div id="box3"  class="child"></div>
-        <!-- <div id=box1 class="child"></div>
-        <div id="box2"  class="child"></div>
-        <div id="box3"  class="child"></div> -->
+        <div id=box1 class="child">1</div>
+        <div id="box2"  class="child">2</div>
+        <div id="box3"  class="child">3</div>
+        <div id=box3 class="child">4</div>
+        <div id="box2"  class="child">5</div>
+        <div id="box1"  class="child">6</div>
+        <div id=box1 class="child">7</div>
+        <div id="box2"  class="child">8</div>
+        <div id="box3"  class="child">9</div>
     </div>
     
 </body>
