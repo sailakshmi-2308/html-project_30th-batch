@@ -13,7 +13,7 @@
             width:600px;
             display:flex;
              flex-direction:row; 
-            flex-wrap:wrap ;
+            /* flex-wrap:wrap ; */
             /* flex-flow: row wrap; */
            justify-content: center;
            /* justify-content: flex-start; */
@@ -24,23 +24,32 @@
            /* align-content:center */
            /* align-content: space-around */
            /* align-items: stretch */
-           align-items:stretch
+           /* align-items:stretch */
 
 
         }
         .child{
             width:100px;
-            /* height:100px; */
+            height:100px;
 
         }
         #box1{
             background-color: red;
+            /* order:4 */
+            /* flex-grow:1 */
+            flex-shrink:2
         }
         #box2{
             background-color: green;
+            /* order:6 */
+            /* flex-grow:3 */
+            flex-shrink:5
         }
         #box3{
             background-color: blue;
+            /* order:2 */
+            /* flex-grow:5 */
+            flex-shrink:8
         }
     </style>
 </head>
@@ -50,9 +59,9 @@
         <div id=box1 class="child">1</div>
         <div id="box2"  class="child">2</div>
         <div id="box3"  class="child">3</div>
-        <div id=box3 class="child">4</div>
+        <div id="box1" class="child">4</div>
         <div id="box2"  class="child">5</div>
-        <div id="box1"  class="child">6</div>
+        <div id="box3"  class="child">6</div>
         <div id=box1 class="child">7</div>
         <div id="box2"  class="child">8</div>
         <div id="box3"  class="child">9</div>
