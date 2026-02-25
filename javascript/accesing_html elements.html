@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="calling()">Submit</button><br />
+
+    <input type="text" placeholder="enter your username" id="user_name" />
+    <input type="email" placeholder="enter your email" id="email" />
+    <button onclick="uma()">submitt</button>
+
+    <script>
+      function calling() {
+        console.log("hello everyone");
+      }
+
+      function uma() {
+        let input_value = document.getElementById("user_name").value;
+        console.log(input_value);
+
+        let emaill=document.getElementById("email").value
+        console.log(emaill)
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array=[5,6,7,8,9,"uma",true]
+        console.log(array)
+        console.log(array.length)
+        console.log(array[0],array[1],array[2],array[3],array[4])
+
+console.log("using for loop")
+        for(let i=0;i<array.length;i++){
+            console.log(array[i])
+        }
+
+        //for-each method
+console.log("using forEach method")
+        array.forEach( function(i){
+            return i
+            
+                // console.log(i)  //5 6 7 8....
+        }
+
+        )
+
+
+        //for - of method - array,string,set,..
+console.log("using for of method")
+       arr="this is 30th batch"
+
+       for(let i of arr){
+        console.log(i)
+       }
+
+
+       //map method
+let uma=[2,3,4,5,6]
+
+console.log("using map method")
+
+let g=uma.map( function(a){
+    // console.log(a)
+    return a
+}
+)
+console.log(g)
+
+
+    </script>
+</body>
+</html>
