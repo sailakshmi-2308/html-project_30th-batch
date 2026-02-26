@@ -9,6 +9,8 @@
     <input type="text" placeholder="enter student name" id="student">
     <button onclick="AddStudent()">Add Student</button>
 
+    <ul id="studentList"></ul>
+
     <script>
         function AddStudent(){
 
@@ -30,12 +32,24 @@
             localStorage.setItem("uma",JSON.stringify(existingStudents));
 
             student_field.value=""
-            
+
+            loadStudents()
 
         }
         function getStudentsFromStorage(){
             let students=localStorage.getItem("uma");
             return students?JSON.parse(students):[]
+        }
+
+        function loadStudents(){
+            let studentList=document.getElementById("studentList")
+
+            let existingStudents=getStudentsFromStorage();
+
+            existingStudents.forEach(function(i,index){
+                    console.log(i,index)
+            })
+            
         }
     </script>
 </body>
